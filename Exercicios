@@ -52,3 +52,16 @@ FROM produtos;
 d)
 SELECT AVG(preco) AS media_precos
 FROM produtos;
+---------------------------------------------------------------------------------------------------------------------
+3. Funções de Data:
+
+a)
+CREATE TABLE eventos (
+    data_evento DATE
+);
+
+INSERT INTO eventos (data_evento) VALUES
+('2006-11-09'),
+('1979-07-15'),
+('2008-07-05'),
+('1969-05-15');
