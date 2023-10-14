@@ -11,3 +11,8 @@ INSERT INTO nomes (nome) VALUES
 ('Roberto'),
 ('Maria Clara'),
 ('João');
+
+B)
+
+UPDATE nomes
+SET nome = UPPER(nome);
