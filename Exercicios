@@ -76,3 +76,10 @@ FROM eventos;
 d)
 SELECT data_evento, DAYNAME(data_evento) AS dia_da_semana
 FROM eventos;
+---------------------------------------------------------------------------------------------------------------------
+4. Funções de Controle de Fluxo:
+
+a)
+SELECT produto, preco, quantidade,
+       IF(quantidade > 0, 'Em estoque', 'Fora de estoque') AS status_estoque
+FROM produto
