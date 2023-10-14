@@ -65,3 +65,10 @@ INSERT INTO eventos (data_evento) VALUES
 ('1979-07-15'),
 ('2008-07-05'),
 ('1969-05-15');
+
+b)
+INSERT INTO eventos (data_evento) VALUES (NOW());
+
+c)
+SELECT data_evento, DATEDIFF(NOW(), data_evento) AS dias_de_diferenca
+FROM eventos;
