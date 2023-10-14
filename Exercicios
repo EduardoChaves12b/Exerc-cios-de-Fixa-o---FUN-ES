@@ -41,4 +41,7 @@ CREATE TABLE produtos (
     quantidade INT
 );
 
+b)
+SELECT produto, ROUND(preco, 2) AS preco_arredondado, quantidade
+FROM produtos;
 
