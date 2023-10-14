@@ -34,3 +34,11 @@ FROM nomes;
 ---------------------------------------------------------------------------------------------------------------------
 2. Funções Numéricas:
 
+a) 
+CREATE TABLE produtos (
+    produto VARCHAR(50),
+    preco DECIMAL(10, 2),
+    quantidade INT
+);
+
+
