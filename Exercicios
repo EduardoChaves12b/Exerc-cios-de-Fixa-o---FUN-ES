@@ -144,6 +144,25 @@ BEGIN
 END;
 
 b)
+CREATE FUNCTION calcular_exponencial(base DECIMAL(10, 2), expoente INT) RETURNS DECIMAL(10, 2)
+BEGIN
+    DECLARE resultado DECIMAL(10, 2);
+    SET resultado = 1;
+    
+    IF expoente = 0 THEN
+        RETURN 1; -- Qualquer número elevado a 0 é 1
+    END IF;
+    
+    IF expoente < 0 THEN
+        RETURN NULL; -- Lidar com expoentes negativos
+    END IF;
+    
+    WHILE expoente > 0 DO
+        SET resultado = resultado * base;
+        SET expoente = expoente - 1;
+    END WHILE;
 
+    RETURN resultado;
+END;
 
 c)
