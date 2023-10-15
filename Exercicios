@@ -92,3 +92,13 @@ SELECT produto, preco, quantidade,
            ELSE 'Caro'
        END AS categoria_preco
 FROM produtos;
+---------------------------------------------------------------------------------------------------------------------
+5. Função Personalizada:
+
+a)
+CREATE FUNCTION TOTAL_VALOR(preco DECIMAL(10, 2), quantidade INT) RETURNS DECIMAL(10, 2)
+BEGIN
+    DECLARE total DECIMAL(10, 2);
+    SET total = preco * quantidade;
+    RETURN total;
+END;
