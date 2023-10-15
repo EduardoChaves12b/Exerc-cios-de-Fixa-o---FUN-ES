@@ -119,6 +119,8 @@ FROM produtos
 WHERE preco = (SELECT MAX(preco) FROM produtos);
 
 c)
-
+SELECT produto, preco
+FROM produtos
+WHERE preco = (SELECT MIN(preco) FROM produtos);
 
 d)
