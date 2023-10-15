@@ -107,3 +107,16 @@ b)
 SELECT produto, preco, quantidade, TOTAL_VALOR(preco, quantidade) AS valor_total
 FROM produtos;
 ---------------------------------------------------------------------------------------------------------------------
+6. Funções de Agregação:
+
+a)
+SELECT COUNT(*) AS total_de_produtos
+FROM produtos;
+
+b)
+
+
+c)
+
+
+d)
