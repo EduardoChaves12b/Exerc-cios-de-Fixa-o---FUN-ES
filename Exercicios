@@ -114,7 +114,9 @@ SELECT COUNT(*) AS total_de_produtos
 FROM produtos;
 
 b)
-
+SELECT produto, preco
+FROM produtos
+WHERE preco = (SELECT MAX(preco) FROM produtos);
 
 c)
 
